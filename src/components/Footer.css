@@ -1,0 +1,35 @@
+.footer {
+  background-color: #0a3cff;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #cce0ff;
+  transform: translateY(-5px);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}

@@ -1,0 +1,87 @@
+/* Navbar wrapper */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Container */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* Logo */
+.nav-logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0a3cff;
+  text-decoration: none;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #0077ff;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0077ff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Contact Button */
+.nav-btn {
+  padding: 8px 18px;
+  background-color: #0077ff;
+  color: white !important;
+  border-radius: 20px;
+}
+
+.nav-btn:hover {
+  background-color: #005bd1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-logo a {
+    font-size: 1.5rem;
+  }
+}

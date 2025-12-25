@@ -1,0 +1,108 @@
+/* Section */
+.skills {
+  min-height: 90vh;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Title */
+.skills-title {
+  font-size: 2.5rem;
+  color: #0a3cff;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.skills-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.skill-card {
+  background-color: #f4f9ff;
+  padding: 30px;
+  border-radius: 12px;
+  border-bottom: 5px solid #0077ff;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card h3 {
+  color: #0a3cff;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #555;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal (reuse style) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  max-width: 520px;
+  padding: 30px;
+  border-radius: 12px;
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.modal h3 {
+  color: #0a3cff;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+
+/* Close button */
+.close-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 22px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #bbb;
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
