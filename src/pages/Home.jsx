@@ -1,5 +1,6 @@
 import "./Home.css";
 import myPhoto from "../assets/myphoto.png"; // add your photo here
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -17,7 +18,10 @@ function Home() {
           </p>
 
         </div>
-          <button className="home-btn" onClick={() => window.location.href = "/contact"}>Let's Talk</button>
+         <Link to="/contact">
+  <button className="home-btn">Let's Talk</button>
+</Link>
+
         {/* RIGHT SIDE */}
         <div className="home-image">
           <img src={myPhoto} alt="My Profile" />
